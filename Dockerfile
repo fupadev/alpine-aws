@@ -11,7 +11,10 @@ RUN apk add zip
 RUN apk add ca-certificates
 RUN apk add openssh
 
+# install pip and pip3
+RUN apk add py2-pip 
+RUN apk add py-pip
+
+
 # Install AWS CLI
-RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-RUN python get-pip.py
 RUN pip install awscli --upgrade six
