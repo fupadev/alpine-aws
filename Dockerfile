@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.10.2
 
 MAINTAINER Bernhard Schönberger <b.schoenberger@fupa.net>
 
