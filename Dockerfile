@@ -22,3 +22,6 @@ RUN apk add py-pip curl zip ca-certificates openssh
 
 # Install AWS CLI
 RUN pip install awscli --upgrade six
+
+# JQ (JSON command line tool)
+RUN apk add jq
