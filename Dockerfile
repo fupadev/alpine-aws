@@ -25,3 +25,9 @@ RUN pip install awscli --upgrade six
 
 # JQ (JSON command line tool)
 RUN apk add jq
+
+RUN apk add nodejs npm --progress
+
+# Install AWS CDK and requirements
+RUN npm install -g typescript
+RUN npm install -g aws-cdk
