@@ -1,7 +1,5 @@
 FROM alpine:3.10.3
 
-MAINTAINER Bernhard Schönberger <b.schoenberger@fupa.net>
-
 # update dependencies
 RUN apk update --progress && \
     apk upgrade --progress
