@@ -32,3 +32,6 @@ RUN npm install -g yarn
 
 # Sentry error reporting
 RUN npm install -g @sentry/cli --unsafe-perm=true
+
+# legacy deployment via rsync
+RUN apk add rsync
