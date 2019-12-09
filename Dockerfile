@@ -7,6 +7,8 @@ RUN apk update --progress && \
 # install bash for extended shell syntax support
 RUN apk add bash
 
+RUN apk add git
+
 # install python2
 RUN apk add python
 RUN apk add python-dev 
